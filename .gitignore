@@ -1,4 +1,22 @@
-*.pkl
-*.csv
+# Python cache
 __pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large datasets
+*.csv
+data/
+datasets/
+
+# Logs
+*.log
