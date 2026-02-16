@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Load model package
-model_package = joblib.load("../models/final_model.pkl")
+model_package = joblib.load("../final_model.pkl")
 model = model_package["model"]
 feature_order = model_package["features"]
 
@@ -35,4 +35,5 @@ if st.button("Predict"):
     if prediction == 1:
         st.error("⚠ High Risk of Low Review")
     else:
+
         st.success("✅ Low Risk")
